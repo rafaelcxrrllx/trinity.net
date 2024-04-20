@@ -1,0 +1,189 @@
+
+.navTrigger {
+    display: none;
+  }
+   
+  .nav {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    mix-blend-mode: overlay;
+  }
+
+  .nav img {
+    top: 0;
+    width: 40%;
+    margin-top: -20%;
+  }
+  
+  
+  .nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+  }
+  
+  .nav div.logo a:hover {
+    cursor: url("assets/clicker.svg"), progress;
+  }
+  
+  .nav div.main_list {
+    height: 65px;
+    float: right;
+    margin-top: 3%;
+    margin-right: 3%;
+  }
+  
+  .nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+  }
+  
+  .nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 1.5rem;
+  }
+  
+  span.navTrigger:hover {
+    cursor: url("assets/clicker.svg"), progress;
+  }
+  
+  /* Scale from center */
+  .nav div.main_list ul li a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  
+  .nav div.main_list ul li a:hover::after,
+  .nav div.main_list ul li a:focus::after{
+    transform: scale(1);
+    z-index: 4;
+  }
+
+  @media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+        
+    }
+    .nav div.logo {
+        width: 44%;
+        margin-left: -10%;
+        margin-top: 10%;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background-color: #000;
+  
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: right;
+        width: auto;
+        font-size: 1.5rem;
+        display: inline-block;
+        margin-right: 5%;
+    }
+  
+    .nav div.media_button {
+        display: block;
+    }
+  
+  }
+  
+  /* Nav Bar Animation */
+  .navTrigger {
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+    margin-top: 15%;
+    margin-right: 5%;
+  }
+  
+  .navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;    
+  }
+  
+  .navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+  }
+  
+  .navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+  }
+  
+  .navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+  }
+  
+  .navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+  }
+  
+  .navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+  }
+  
+  .navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+  }
+
+  
