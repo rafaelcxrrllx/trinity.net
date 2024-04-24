@@ -46,7 +46,7 @@ function App() {
               transition={{ delay: 3, duration: 3 }}>
             <BeatingHeart/>
           </motion.div>
-          {/* <FlowerOfLife/>           */}
+          {/* <FlowerOfLife/> */}
         </motion.div>   
       {/* <Canvas/> */}
       </header>     

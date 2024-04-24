@@ -1,6 +1,6 @@
 
 import './styles.css'; // Global Styling
-import { startAuroraAnimation } from './AuroraAnimation';
+import { startCanvasAnimation } from './CanvasAnimation';
 import {motion, AnimatePresence} from "framer-motion";
 import React, { useState } from 'react';
 import "./Canvas.css";
@@ -12,7 +12,7 @@ import { useEffect } from 'react'; // Import useEffect
 function Canvas() {
 
     useEffect(() => {
-        startAuroraAnimation();
+        startCanvasAnimation();
         }, []);
 
   return (
