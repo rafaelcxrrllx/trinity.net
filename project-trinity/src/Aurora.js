@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, filterRef } from 'react';
 import './styles.css'; // Global Styling
 import './Aurora.css'; 
 
@@ -28,10 +28,10 @@ const Aurora = () => {
       <div className="g-aurora"></div>
       <svg id='blob' version='1.1' xmlns='http://www.w3.org/2000/svg'>
         <defs>
-          {/* <filter id='wave' ref={filterRef}>
+          <filter id='wave' ref={filterRef}>
             <feTurbulence baseFrequency='0.00510 0.01099' id='turbulence' numOctaves='3' result='noise' seed='10' />
             <feDisplacementMap id='displacement' in2='noise' in='SourceGraphic' scale='96' />
-          </filter> */}
+          </filter>
         </defs>
       </svg>
     </div>
