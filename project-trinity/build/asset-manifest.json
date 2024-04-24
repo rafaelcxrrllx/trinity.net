@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/trinity.net/static/css/main.ec62d6e1.css",
+    "main.js": "/trinity.net/static/js/main.d88e7720.js",
+    "static/js/453.1d42ff05.chunk.js": "/trinity.net/static/js/453.1d42ff05.chunk.js",
+    "static/media/skeleton.svg": "/trinity.net/static/media/skeleton.8ba7dbef0fac7cc14a6d0cf9b2f77a93.svg",
+    "static/media/trinity.svg": "/trinity.net/static/media/trinity.900b4e70346a2507890d0cfc3090d877.svg",
+    "static/media/sun-moon.svg": "/trinity.net/static/media/sun-moon.b7b9db040dda6086b837fbf0c2006759.svg",
+    "static/media/flower.svg": "/trinity.net/static/media/flower.d1a1fd29bb1f94c9985168f42699fdbb.svg",
+    "static/media/trinity-eye.svg": "/trinity.net/static/media/trinity-eye.c7dfad2205e16935adc92c750e3eed9a.svg",
+    "static/media/pointer.svg": "/trinity.net/static/media/pointer.458d686e194750d44d91.svg",
+    "static/media/clicker.svg": "/trinity.net/static/media/clicker.542fb5d55b405e6496ad.svg",
+    "index.html": "/trinity.net/index.html",
+    "main.ec62d6e1.css.map": "/trinity.net/static/css/main.ec62d6e1.css.map",
+    "main.d88e7720.js.map": "/trinity.net/static/js/main.d88e7720.js.map",
+    "453.1d42ff05.chunk.js.map": "/trinity.net/static/js/453.1d42ff05.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec62d6e1.css",
+    "static/js/main.d88e7720.js"
+  ]
+}
