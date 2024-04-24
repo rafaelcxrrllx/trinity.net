@@ -1,0 +1,31 @@
+
+#flower {
+    margin-top: 10%;
+}
+
+.Spinning-logo {
+    height: 30vmin;
+    pointer-events: none;
+  }
+
+.FlowerDiv {
+    background-color: aqua;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .Spinning-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

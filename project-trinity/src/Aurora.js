@@ -1,33 +1,26 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, filterRef } from 'react';
 import './styles.css'; // Global Styling
 import './Aurora.css'; 
 
 const Aurora = () => {
-  const filterRef = useRef(null);
+  
+    var filter = document.querySelector("#turbulence");
+	var frames = 0;
+	var rad = Math.PI / 180;
 
-  useEffect(() => {
-    const filter = filterRef.current;
-    let frames = 0;
-    const rad = Math.PI / 180;
-    let bfx = 0.005; // Define bfx here
-    let bfy = 0.005; // Define bfy here
+	function freqAnimation() {
+        var bfx = 0.005;
+        var bfy = 0.005;
+        frames += .5
+        bfx += 0.0025 * Math.cos(frames * rad);
+        bfy += 0.0025 * Math.sin(frames * rad);
 
-    function freqAnimation() {
-      frames += 0.5;
-      bfx += 0.0025 * Math.cos(frames * rad);
-      bfy += 0.0025 * Math.sin(frames * rad);
+        var bf = bfx.toString() + ' ' + bfy.toString();
+        filter.setAttributeNS(null, 'baseFrequency', bf);
+        window.requestAnimationFrame(freqAnimation);
+	}
 
-      const bf = `${bfx} ${bfy}`;
-      filter.setAttribute('baseFrequency', bf);
-      window.requestAnimationFrame(freqAnimation);
-    }
-
-    window.requestAnimationFrame(freqAnimation);
-
-    return () => {
-      cancelAnimationFrame(freqAnimation);
-    };
-  }, []);
+	window.requestAnimationFrame(freqAnimation);
 
   return (
     <div className="aurora">
