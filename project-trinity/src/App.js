@@ -48,7 +48,7 @@ function App() {
           </motion.div>
           {/* <FlowerOfLife/> */}
         </motion.div>   
-      {/* <Canvas/> */}
+      <Canvas/>
       </header>     
     </div>
   );
